@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "start-client": "cd client && ng serve",
+    "start-server": "cd server && npx nodemon app.js"
+  }
+}

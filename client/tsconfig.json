@@ -1,0 +1,50 @@
+/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
+/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc",
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "declaration": false,
+    "experimentalDecorators": true,
+    "moduleResolution": "bundler",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "lib": [
+      "ES2022",
+      "dom"
+    ],
+    "paths": {
+      "@core/auth": ["./src/app/core/auth/index.ts"],
+      "@core/api": ["./src/app/core/api/index.ts"],
+
+      "@models": ["./src/app/models/index.ts"],
+
+      "@shared/components": ["./src/app/shared/components/index.ts"],
+      "@chat/components": ["./src/app/features/chat/components/index.ts"],
+      "@chat/models": ["./src/app/features/chat/models/index.ts"],
+      "@features/chat/services": ["./src/app/features/chat/services/index.ts"],
+
+      "@store/actions": ["./src/app/store/actions/index.ts"],
+      "@store/effects": ["./src/app/store/effects/index.ts"],
+      "@store/reducers": ["./src/app/store/reducers/index.ts"],
+      "@store/models": ["./src/app/store/models/index.ts"],
+      "@store/selectors": ["./src/app/store/selectors/index.ts"],
+    },
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}
